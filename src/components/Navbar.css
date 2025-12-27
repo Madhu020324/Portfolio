@@ -49,7 +49,6 @@
     justify-content: center;
     align-items: center;
     z-index: 2000;
-    /* Higher than navbar */
     backdrop-filter: blur(5px);
     animation: fadeIn 0.3s ease;
 }
@@ -101,7 +100,6 @@
     font-weight: 500;
     position: relative;
     color: var(--text-color);
-    /* Dark text */
 }
 
 .nav-links li a:hover,
@@ -128,6 +126,5 @@
 @media (max-width: 768px) {
     .nav-links {
         display: none;
-        /* For simplicity in this step, hiding on mobile. A drawer would be ideal but out of scope for just these two sections unless requested. I'll stick to basic responsive hiding or wrapping. */
     }
 }

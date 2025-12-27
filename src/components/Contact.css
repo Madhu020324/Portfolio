@@ -1,4 +1,3 @@
-/* Existing Contact.css content */
 .contact-section {
     padding: 2rem 5%;
     background-color: var(--bg-color);
@@ -16,7 +15,6 @@
     text-align: left;
 }
 
-/* Reuse title style */
 .section-title {
     font-size: 2rem;
     font-weight: 700;
@@ -43,10 +41,8 @@
     gap: 4rem;
     margin-top: 1rem;
     padding-left: 5rem;
-    /* Match indentation */
 }
 
-/* Form Container */
 .contact-form-container {
     background-color: var(--secondary-bg);
     padding: 2rem;
@@ -84,7 +80,6 @@
     font-size: 1rem;
     color: #1e293b;
     transition: outline 0.2s ease, border-color 0.2s ease;
-    /* Added border-color transition */
 }
 
 .form-group input:focus,
@@ -92,16 +87,13 @@
     outline: 2px solid var(--accent-color);
 }
 
-/* Validation Styles */
 .required-asterisk {
     color: #ef4444;
-    /* Red color for asterisk */
     margin-left: 0.1rem;
 }
 
 .error-message {
     color: #ef4444;
-    /* Red color for errors */
     font-size: 0.85rem;
     margin-top: 0.25rem;
     display: block;
@@ -114,12 +106,10 @@
 
 .input-error:focus {
     outline: 1px solid #ef4444 !important;
-    /* Keep red focus on error */
 }
 
 .submit-button {
     background-color: var(--accent-color);
-    /* Blue */
     color: white;
     border: none;
     padding: 0.75rem 2rem;
@@ -138,7 +128,6 @@
     background-color: var(--accent-color);
 }
 
-/* Right Side Info */
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -157,7 +146,6 @@
     height: 50px;
     border-radius: 50%;
     background-color: #333;
-    /* Dark gray for icon styles */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,7 +155,6 @@
 
 .icon-red {
     background-color: #dc2626;
-    /* Red for location */
 }
 
 .info-text a,
@@ -201,7 +188,6 @@
     transition: all 0.3s ease;
     border: 1px solid rgba(0, 0, 0, 0.2);
     font-size: 1.5rem;
-    /* Ensure icon size matches */
 }
 
 .social-icon:hover {

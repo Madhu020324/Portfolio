@@ -3,6 +3,3 @@
   display: flex;
   flex-direction: column;
 }
-
-/* Remove default centering and max-width constraints if they conflict with full-width sections */
-/* Sections handle their own containers */

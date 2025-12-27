@@ -1,6 +1,5 @@
 .experience-section {
     padding: 2rem 5%;
-    /* Match About padding side % */
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -12,17 +11,14 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    /* Explicitly ensure left alignment */
 }
 
 .experience-list {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    /* max-width removed here it is controlled by parent */
     margin-top: 3rem;
     padding-left: 5rem;
-    /* Indent the list relative to the section title */
 }
 
 .experience-item {
@@ -32,12 +28,10 @@
     position: relative;
 }
 
-/* Add a connector line (optional visual flair for timeline feel) or just simple spacing */
 .experience-item::before {
     content: '';
     position: absolute;
     left: 300px;
-    /* Alumned with the gap */
     top: 0;
     bottom: 0;
     width: 1px;
@@ -45,10 +39,8 @@
     opacity: 0.2;
     transform: translateX(-50%);
     display: none;
-    /* Hidden by default, enable if strict timeline look is desired */
 }
 
-/* Left Side: Meta Info */
 .experience-left {
     text-align: left;
 }
@@ -73,7 +65,6 @@
     font-family: monospace;
 }
 
-/* Right Side: Content */
 .experience-right {
     display: flex;
     flex-direction: column;
@@ -89,11 +80,9 @@
 
 .tech-badge {
     background-color: rgba(100, 108, 255, 0.1);
-    /* Subtle brand color tint */
     color: var(--primary-color);
     padding: 0.5rem 1rem;
     border-radius: 9999px;
-    /* Pill shape */
     font-size: 0.9rem;
     font-weight: 500;
     border: 1px solid rgba(100, 108, 255, 0.3);
@@ -107,7 +96,6 @@
     transform: translateY(-2px);
 }
 
-/* Description List */
 .experience-points {
     list-style-type: none;
     padding: 0;
@@ -130,11 +118,9 @@
     color: var(--primary-color);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .experience-item {
         grid-template-columns: 1fr;
-        /* Stack vertically on mobile */
         gap: 1.5rem;
     }
 
@@ -144,7 +130,6 @@
     }
 }
 
-/* Title styling matching About section */
 .section-title {
     font-size: 2rem;
     font-weight: 700;
@@ -152,7 +137,6 @@
     display: inline-block;
     color: var(--text-color);
     margin-bottom: 3rem;
-    /* Space below title */
 }
 
 .section-title::after {

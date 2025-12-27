@@ -1,13 +1,9 @@
 .about {
     min-height: auto;
     padding-bottom: 4rem;
-    /* Ensure some bottom spacing */
     padding: 2rem 5%;
-    /* Use percentage padding for sides */
-    /* background-color removed for seamless flow */
     display: flex;
     justify-content: flex-start;
-    /* Align entire block to the left */
     align-items: center;
 }
 
@@ -22,7 +18,6 @@
 
 .about-heading {
     flex: 0 0 35%;
-    /* 35% width */
 }
 
 .about-heading h2 {
@@ -46,11 +41,8 @@
 
 .about-text {
     flex: 1;
-    /* Remaining width */
-    font-size: 1.1rem;
     font-size: 1.1rem;
     color: #334155;
-    /* Slate-700 for readability on light bg */
     line-height: 1.8;
 }
 

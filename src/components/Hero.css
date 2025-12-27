@@ -8,7 +8,6 @@
     text-align: center;
     padding: 0 1rem;
     padding-top: var(--nav-height);
-    /* Account for fixed navbar */
 }
 
 .profile-img-container {
@@ -19,7 +18,6 @@
 
 .profile-img {
     width: 150px;
-    /* Adjust size as needed */
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
@@ -44,7 +42,6 @@
 .hero-subtitle {
     font-size: 1.5rem;
     color: #94a3b8;
-    /* Slate-400 */
     margin-bottom: 2rem;
 }
 
@@ -63,7 +60,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    /* Make them circular */
     transition: all 0.3s ease;
     width: 50px;
     height: 50px;
@@ -90,7 +86,6 @@
     text-decoration: none;
     cursor: pointer;
     border: none;
-    /* specific reset for button element */
 }
 
 .btn-primary {
