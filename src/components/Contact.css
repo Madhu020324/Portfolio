@@ -1,0 +1,225 @@
+/* Existing Contact.css content */
+.contact-section {
+    padding: 2rem 5%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding-bottom: 4rem;
+    /* Extra padding at bottom */
+}
+
+.contact-content {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Reuse title style */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-color);
+    bottom: -10px;
+    left: 0;
+    border-radius: 2px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    margin-top: 1rem;
+    padding-left: 5rem;
+    /* Match indentation */
+}
+
+/* Form Container */
+.contact-form-container {
+    background-color: var(--secondary-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.contact-intro {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #1e293b;
+    transition: outline 0.2s ease, border-color 0.2s ease;
+    /* Added border-color transition */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+/* Validation Styles */
+.required-asterisk {
+    color: #ef4444;
+    /* Red color for asterisk */
+    margin-left: 0.1rem;
+}
+
+.error-message {
+    color: #ef4444;
+    /* Red color for errors */
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.input-error {
+    border-color: #ef4444 !important;
+    outline: none;
+}
+
+.input-error:focus {
+    outline: 1px solid #ef4444 !important;
+    /* Keep red focus on error */
+}
+
+.submit-button {
+    background-color: var(--accent-color);
+    /* Blue */
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    letter-spacing: 0.05em;
+}
+
+.submit-button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Right Side Info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    /* Dark gray for icon styles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.icon-red {
+    background-color: #dc2626;
+    /* Red for location */
+}
+
+.info-text a,
+.info-text span {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.info-text a:hover {
+    color: var(--accent-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    /* Ensure icon size matches */
+}
+
+.social-icon:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    background: rgba(37, 99, 235, 0.1);
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        gap: 3rem;
+    }
+
+    .contact-info {
+        padding-top: 0;
+    }
+}

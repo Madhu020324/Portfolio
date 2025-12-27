@@ -1,0 +1,113 @@
+.skills-section {
+    padding: 2rem 5%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.skills-content {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* Reduced from 3rem to minimal */
+    margin-top: 1.5rem;
+    /* Reduced margin */
+    padding-left: 5rem;
+    /* Match indentation of Experience section */
+}
+
+.skill-category-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.skill-category-name h3 {
+    font-size: 1rem;
+    /* Reduced from 1.5rem */
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0;
+    line-height: 1.4;
+    /* Better leading for smaller text */
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    /* Reduced from 1rem */
+}
+
+.skill-badge {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    padding: 0.4rem 0.8rem;
+    /* Reduced padding */
+    border-radius: 6px;
+    /* Slightly softer than full pill if desired, or use 9999px */
+    font-size: 0.8rem;
+    /* Reduced to match minimal look */
+    font-weight: 500;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: default;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-badge:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-2px);
+    background-color: rgba(45, 212, 191, 0.05);
+}
+
+/* Title styling matching About/Experience */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-color);
+    bottom: -10px;
+    left: 0;
+    border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skill-category-item {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .skills-list {
+        padding-left: 0;
+        gap: 2.5rem;
+    }
+
+    .skill-category-name h3 {
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}

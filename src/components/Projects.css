@@ -1,0 +1,172 @@
+.projects-section {
+    padding: 2rem 5%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.projects-content {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    /* Spacing between cards */
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+    .projects-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .projects-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+    border-color: var(--primary-color);
+}
+
+.project-image-container {
+    width: 100%;
+    height: 200px;
+    background-color: #2a2a2a;
+    /* Placeholder bg */
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-details {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.project-title a {
+    color: var(--text-color);
+    text-decoration: none;
+    /* Removed underline as per icon preference usually, but user asked for underline BEFORE. Let's keep it clean or ask? User said "Name and a symbol ... so that it is visible as clickable link". Checking the image... image shows title + icon. I will remove underline if icon is strong enough, OR keep it. Image has NO underline. I will remove underline to match image aesthetic, as icon + hover is enough. */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.project-title a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.external-link-icon {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.project-title a:hover .external-link-icon {
+    color: var(--primary-color);
+}
+
+.project-tech-stack {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+    /* Push to bottom */
+    padding-top: 1rem;
+}
+
+.tech-icon {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.tech-icon:hover {
+    transform: translateY(-2px);
+    color: var(--primary-color);
+}
+
+/* Specific colors if desired */
+.react-icon:hover {
+    color: #61DAFB;
+}
+
+.ts-icon:hover {
+    color: #3178C6;
+}
+
+/* Use same section title style as Experience/About */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-color);
+    bottom: -10px;
+    left: 0;
+    border-radius: 2px;
+}

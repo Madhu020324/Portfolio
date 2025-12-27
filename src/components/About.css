@@ -1,0 +1,75 @@
+.about {
+    min-height: auto;
+    padding-bottom: 4rem;
+    /* Ensure some bottom spacing */
+    padding: 2rem 5%;
+    /* Use percentage padding for sides */
+    /* background-color removed for seamless flow */
+    display: flex;
+    justify-content: flex-start;
+    /* Align entire block to the left */
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    gap: 4rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about-heading {
+    flex: 0 0 35%;
+    /* 35% width */
+}
+
+.about-heading h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    color: var(--text-color);
+}
+
+.about-heading h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-color);
+    bottom: -10px;
+    left: 0;
+    border-radius: 2px;
+}
+
+.about-text {
+    flex: 1;
+    /* Remaining width */
+    font-size: 1.1rem;
+    font-size: 1.1rem;
+    color: #334155;
+    /* Slate-700 for readability on light bg */
+    line-height: 1.8;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-heading {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .about-heading h2 {
+        font-size: 2.5rem;
+    }
+}
