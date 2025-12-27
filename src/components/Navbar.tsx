@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
     <>
       <nav className="navbar">
         <div className="logo-container" onClick={openModal}>
-          <img src="/public/Madhu_Image.jpg" alt="Madhu Yamini Nallamothu" className="logo-img" />
+          <img src="/Madhu_Image.jpg" alt="Madhu Yamini Nallamothu" className="logo-img" />
         </div>
         <ul className="nav-links">
           <li><a href="#about" className={activeSection === 'about' ? 'active' : ''}>About</a></li>
@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-button" onClick={closeModal}>&times;</button>
-            <img src="/public/Madhu_Image.jpg" alt="Profile Photo of Madhu Yamini Nallamothu" className="full-image" />
+            <img src="/Madhu_Image.jpg" alt="Profile Photo of Madhu Yamini Nallamothu" className="full-image" />
           </div>
         </div>
       )}
